@@ -1,0 +1,47 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+
+:root{
+    --azul_osc: rgb(1, 1, 29);
+    --blanco:   #ffffff;
+    --rojo:rgba(223, 9, 9, 0.966);
+}
+body{
+    font-family: 'Comfortaa', sans-serif;
+}
+.navbar{
+    background-color:var(--azul_osc);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.navbar-item{
+color: var(--blanco);
+}
+.navbar-titulo{
+    color: var(--blanco);
+    font-size: 25px;
+    font-weight: bold; 
+}
+.main-cont{
+    padding: 20px;
+}
+.logo_est{
+    max-width: 35%; /* La imagen se ajustará al ancho del contenedor padre */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block;
+    margin: auto
+}
+
+.cont_card{
+    color: var(--rojo);
+    font-weight: bold; 
+}
+
+.card-est{
+    background-color: rgba(245, 245, 245, 0.575);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3); 
+}
+
+.forma{
+    background-color: rgba(223, 9, 9, 0.966);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3); 
+}

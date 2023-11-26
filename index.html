@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>DataCorp</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    Data.Corp
+                </a>
+            </div>
+
+        </nav><br>
+
+        <img class="logo_est" src="img/logo.png" alt="logo_contraloria">
+
+    </header>
+    <main class="main-cont">
+        <DIV class="container ">
+            <div class=" column is-one-third forma">
+                <h1 class="title is-3 is-flex has-text-white is-justify-content-center  ">INDICADOR</h1>
+            </div>
+
+            <form id="campo_form">
+                <div class="card card-est">
+                    <div class="card-content">
+                        <p class="cont_card is-flex is-justify-content-center ">SANCIONES CONTRA SERVIDORES CIVILES
+                            (SUSPENSIÓN E INHABILITACIÓN)
+                        </p>
+
+                        <br>
+
+                        <p class="content">
+                            he leído la información de la parte anterior, la entiendo completamente y realizaré
+                            la TRT sabiendo que no EXISTE CURA para la Tinnitus.
+                        </p>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field">
+                                    <label class="label">Region:</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="region">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <label class="label">Provincia:</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="provincia">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <label class="label">Nivel de Gobierno:</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="niv_gobierno">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field">
+                                    <label class="label">Sector:</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="sector">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <label class="label">Entidad:</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="entidad">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <label class="label">Año:</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="anio">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="buttons is-right ">
+                        <button type="submit" class="button is-success">BUSCAR</button>
+                        <button type="button" class="button is-danger">LIMPIAR</button>
+                    </div>
+                </div>
+            </form><br><br>
+            <form id="campo_form">
+                <div class="card card-est">
+                    <div class="card-content">
+
+                        <p class="cont_card is-flex is-justify-content-center ">SANCIONES SANCIONES SANCIONES SANCIONES
+                            (SANCIONES E SANCIONES)
+                        </p>
+                        <br>
+                        <p class="content">
+                            he leído la información he leído la información he leído la información he leído la
+                            información he leído la información he leído la información .
+                        </p>
+                        <div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+
+
+
+                    </div>
+                    <div class="buttons is-right ">
+                        <button id="downloadButton" type="button" class="button is-success">Imprimir</button>
+                        
+                    </div>
+                </div>
+            </form>
+        </DIV>
+
+    </main>
+
+    <script type="module" src="js/web.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/graficos.js"></script>
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+          // Obtener la URL de la imagen
+          var imageURL = document.getElementById('myChart').src;
+    
+          // Crear un enlace temporal para descargar la imagen
+          var link = document.createElement('a');
+          link.href = imageURL;
+          link.download = 'mi_imagen.jpg';
+          
+          // Agregar el enlace al DOM y simular un clic
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      </script>
+</body>
+
+</html>
